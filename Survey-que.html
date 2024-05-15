@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html oncontextmenu="return false" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surveys and Questionnaires</title>
+    <style>
+        :root {
+            --font: "monospace", sans-sarif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #000;
+        }
+
+        .container {
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+
+
+        .head-txt {
+            display: flex;
+            justify-content: center;
+            font-size: 75px;
+            font-weight: bolder;
+            font-family: monospace;
+            position: relative;
+            color: ghostwhite;
+            top: 160px;
+        }
+
+        .head-txt::selection {
+            background-color: rebeccapurple;
+        }
+
+        .questions {
+            height: auto;
+            width: 70vw;
+            background: #000;
+            position: relative;
+            top: 25%;
+            border-radius: 25px;
+        }
+
+        .questions:hover {
+            background: #171717;
+            transition: all 1s 0.2s ease-in-out
+        }
+
+        .para {
+            font-family: "Anta", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            color: white;
+            font-size: 20px;
+            line-height: 1.3;
+            margin-top: 50px;
+            margin-left: 45px;
+            margin-right: 35px;
+
+        }
+
+        #summaries {
+            position: relative;
+            top: 140px;
+            left: 4%;
+            font-size: 21px;
+
+        }
+
+        #summaries:hover {
+            cursor: pointer;
+        }
+
+        summary {
+            color: #d4ffff;
+            margin-top: 15px;
+        }
+
+        .summ-p {
+            color: white;
+            margin-top: 15px;
+            margin-bottom: 12px;
+            margin-left: 30px;
+        }
+
+        .highlight-up {
+            color: whitesmoke;
+            position: absolute;
+            top: 21%;
+        }
+
+        .highlight-down {
+            color: whitesmoke;
+            position: absolute;
+            top: 32%;
+
+        }
+
+        .one {
+            color: wheat;
+        }
+
+        #yes {
+            margin-left: 55px;
+        }
+
+        #no {
+            margin-left: 55px;
+        }
+
+        details {
+            height: auto;
+            background: #010;
+        }
+
+        .com-txt p {
+            color: #a8c0c0;
+            padding-top: 40px;
+            text-align: center;
+            font-family: monospace;
+
+        }
+
+        .com-txt {
+            height: 60vh;
+        }
+
+        .second-txt{
+            margin-left: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <marquee Scrollamount="20" behavior="leakage" class="highlight-up" direction="left"
+            style="color: white; width: 68vw;">
+            --------------------------------------------------------------------------------------------
+        </marquee>
+        <p class="head-txt">Survey and Questionnaires</p>
+        <marquee Scrollamount="20" behavior="left" class="highlight-down" direction="left"
+            style="color: white; width: 68vw;">
+            ------------------------------------------------------------------------------------------
+        </marquee>
+        <div class="questions">
+            <div class="theory">
+
+                <p class="para">By asking these questions, we can gather information about potential data leakage and
+                    take
+                    appropriate
+                    measures to prevent it. It is important to collect and store this data in a secure and responsible
+                    manner, and to ensure that it is used only for the purposes for which it was collected. It is also
+                    important to provide users with clear and concise information about how their data is collected,
+                    used,
+                    and shared, and to obtain their consent where required by law.</p>
+            </div>
+
+            <section id="summaries">
+                <details id="ch1">
+                    <summary>Questionnaire</summary>
+                    <p class="summ-p">1. Have you shared your personal information with any third-party vendors or
+                        partners?</p>
+                    <input type="radio" id="yes" name="radio" value="Yes">
+                    <label class="one" for="yes">Yes</label><br>
+                    <input type="radio" id="no" name="radio" value="No">
+                    <label class="one" for="no">No</label><br>
+                    <p class="summ-p">2. Have you noticed any unusual activity on your account or in your communication
+                        with the website? This question can help you detect any potential data leakage through
+                        unauthorized access or hacking.</p>
+                    <input type="radio" id="yes" name="radio" value="Yes">
+                    <label class="one" for="yes">Yes</label><br>
+                    <input type="radio" id="no" name="radio" value="No">
+                    <label class="one" for="no">No</label><br>
+                    <p class="summ-p">3. Have you received any suspicious emails or messages that appear to be from the
+                        website? This question can help you detect any potential data leakage through phishing or social
+                        engineering attacks.</p>
+                    <input type="radio" id="yes" name="radio" value="Yes">
+                    <label class="one" for="yes">Yes</label><br>
+                    <input type="radio" id="no" name="radio" value="No">
+                    <label class="one" for="no">No</label><br>
+                    <p class="summ-p">4. Have you clicked on any suspicious links or downloaded any suspicious files
+                        while using the website? This question can help you detect any potential data leakage through
+                        malware or other malicious software.</p>
+                    <input type="radio" id="yes" name="radio" value="Yes">
+                    <label class="one" for="yes">Yes</label><br>
+                    <input type="radio" id="no" name="radio" value="No">
+                    <label class="one" for="no">No</label><br>
+                    <p class="summ-p">5. Have you shared your login credentials with anyone else? </p>
+                    <input type="radio" id="yes" name="radio" value="Yes">
+                    <label class="one" for="yes">Yes</label><br>
+                    <input type="radio" id="no" name="radio" value="No">
+                    <label class="one" for="no">No</label><br>
+                    <p class="summ-p">6. Have you used any public or unsecured Wi-Fi networks while using the website?
+                    </p>
+                    <input type="radio" id="yes" name="radio" value="Yes">
+                    <label class="one" for="yes">Yes</label><br>
+                    <input type="radio" id="no" name="radio" value="No">
+                    <label class="one" for="no">No</label><br>
+                    <p class="summ-p">7. Have you noticed any changes in your transaction history or payment
+                        information?</p>
+                    <input type="radio" id="yes" name="radio" value="Yes">
+                    <label class="one" for="yes">Yes</label><br>
+                    <input type="radio" id="no" name="radio" value="No">
+                    <label class="one" for="no">No</label><br>
+                    <p class="summ-p">8. Have you shared your login credentials with anyone else? </p>
+                    <input type="radio" id="yes" name="radio" value="Yes">
+                    <label class="one" for="yes">Yes</label><br>
+                    <input type="radio" id="no" name="radio" value="No">
+                    <label class="one" for="no">No</label><br>
+                    <p class="summ-p">9. Have you shared your login credentials with anyone else? </p>
+                    <input type="radio" id="yes" name="radio" value="Yes">
+                    <label class="one" for="yes">Yes</label><br>
+                    <input type="radio" id="no" name="radio" value="No">
+                    <label class="one" for="no">No</label><br>
+
+                </details>
+                <details id="ch2">
+                    <summary>Community</summary>
+                    <div class="com-txt">
+                        <p>Data leakage detection is an important aspect of data security and privacy. A community on
+                            data leakage detection can help organizations and individuals share information, best
+                            practices, and resources for detecting and preventing data leakage.</p>
+                        <p class="second-txt">Collaborate with other organizations: Collaborate with other organizations, such as industry
+                            associations, non-profits, and government agencies, to share best practices and resources
+                            for data leakage detection.</p>
+                    </div>
+                </details>
+                
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>

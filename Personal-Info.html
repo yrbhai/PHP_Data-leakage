@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" oncontextmenu="false">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security-Information</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            height: 100vh;
+            opacity: 24%;
+            width: 100%;
+        }
+
+        .container {
+            height: 100vh;
+            width: 100%;
+            background-color: #000;
+            color: wheat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            height: 70vh;
+            width: 50vw;
+            background: rebeccapurple;
+            position: absolute;
+            background: transparent;
+            filter: blur(1px);
+            box-shadow: 0px 0px 19px 0px black;
+
+
+
+        }
+
+        .box:hover {
+            filter: blur(0px);
+            transition: 1s 1s ease-in-out;
+            transform: scale(1.1);
+            transition: transform 1s 0.1s ease-in-out;
+        }
+
+
+        .input-cont {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin: 30px;
+        }
+
+        .in-tag {
+            margin-top: 23px;
+            padding: 10px;
+            border-radius: 4px;
+            background: border-box;
+        }
+
+        h2 {
+            display: flex;
+            justify-content: center;
+            margin-top: 2px;
+            color: black;
+        }
+
+        .btn-primary {
+            position: relative;
+            top: 50px;
+            width: 74px;
+            height: 36px;
+            right: -80%;
+            padding: 4px;
+            background: #2d2828;
+            color: aliceblue;
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+            transform: scaleX(1.5);
+            cursor: progress;
+
+        }
+
+        .terms {
+            position: relative;
+            bottom: -120px;
+            color: #000;
+            left: 45%;
+            cursor: pointer;
+            font-size: 17px;
+        }
+
+        @keyframes load {
+            0% {
+                width: 0;
+            }
+
+            50% {
+                width: 40vw;
+            }
+
+            100% {
+                width: 100vw;
+            }
+        }
+
+        .progress {
+            background-color: red;
+            height: 3px;
+            position: fixed;
+            animation: load 1s ease-in-out 1;
+        }
+
+        .info-txt {
+            position: relative;
+            top: 63px;
+            width: 30vw;
+            font-family: "Cutive Mono", monospace;
+            line-height: 1.2;
+            color: azure;
+        }
+
+        .btn a {
+            text-decoration: none;
+            font-style: normal;
+            color: whitesmoke;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <div class="progress"></div>
+    </header>
+
+    <div class="container">
+        <img src="https://th.bing.com/th/id/OIP.-qLGXNVrrVskNbIqxvHhCwHaE8?w=280&h=187&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+            alt="">
+        <div class="box" data-animation-type="show">
+            <h2>Perosnal Information</h2>
+            <div class="input-cont">
+                <input type="text" name="fullname" class="fullname in-tag" placeholder="Full Name">
+                <input type="email" name="email" class="email in-tag" placeholder="Business E-mail">
+                <input type="number" name="phonenumber" id="p-number" class="in-tag" placeholder="Phone Number">
+                <input type="text" name="location" class="location in-tag" placeholder="Physical Location">
+
+                <p class="info-txt">This can include data such as the user's name, email address, phone number, and
+                    physical address. It
+                    is important to protect your data from unauthorized access and to ensure it is collected and stored
+                    in compliance with data protection regulations.</p>
+                <button class="btn btn-primary"><a href="Survey-que.html">Conform</a></button>
+            </div>
+            <p class="terms">Terms & Policy</p>
+
+        </div>
+    </div>
+</body>
+
+</html>

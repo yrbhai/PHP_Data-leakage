@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create an Account - Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    <video id="vid" src="854322-sd_640_360_25fps.mp4" loop muted autoplay></video>
+</head>
+
+<body>
+    <main>
+        <div class="content">
+
+            <marquee scrollamount="2" direction="up" class="content">Data leakage is the unauthorized
+                transmission of
+                data from within an
+                organization to an external destination
+                or recipient.
+                We can help prevent data leakage and protect sensitive data from unauthorized access. It is
+                important to
+                regularly review and update these measures to ensure they are effective and up-to-date.
+            </marquee>
+
+        </div>
+        <div class="mail-cont">
+            <div class="mail">
+                <input type="email" placeholder="Email Address">
+            </div>
+        </div>
+
+        <marquee class="mar" behavior="leakage" direction="left" style="color: aliceblue;" scrollamount="10">
+            Implement
+            strong access controls</marquee>
+        <marquee class="mar" behavior="leakage" direction="right" style="color: aliceblue; height: 80px;"
+            scrollamount="10">
+            <pre>Encrypt
+sensitive data                    Implement access controls for third-party vendors</pre>
+        </marquee>
+        <marquee class="mar" behavior="leakage" direction="left" style="color: aliceblue;" scrollamount="10">
+            Implement
+            data loss prevention (DLP) policies
+        </marquee>
+        <marquee class="mar" behavior="leakage" direction="right" style="color: aliceblue; height: 100px;"
+            scrollamount="10">
+        </marquee>
+
+
+        <marquee class="mar" behavior="leakage" direction="left" style="color: transparent; height: 00px;"
+            scrollamount="10">
+            Implement
+            strong access controls</marquee>
+        <marquee class="mar" behavior="leakage" direction="right" style="color: transparent; height: 80px;"
+            scrollamount="10">
+            Encrypt sensitive data
+        </marquee>
+        <marquee class="mar" behavior="leakage" direction="left" style="color: transparent;" scrollamount="10">
+            Implement
+            data loss prevention (DLP) policies
+        </marquee>
+        <marquee class="mar" behavior="leakage" direction="right" style="color: transparent; height: 100px;"
+            scrollamount="10">Monitor user activity
+        </marquee>
+
+        <marquee class="mar" behavior="leakage" direction="left" style="color: transparent; height: 00px;"
+            scrollamount="10">
+            Educate employees
+        </marquee>
+        <marquee class="mar" behavior="leakage" direction="right" style="color: white; height: 80px;" scrollamount="10">
+            <pre>Implement data retention policies                            Regularly review and update security measures</pre>
+
+        </marquee>
+        <marquee class="mar" behavior="leakage" direction="left" style="color: white;" scrollamount="10">
+            <pre>Implement incident response plans </pre>
+
+        </marquee>
+        <marquee class="mar" behavior="leakage" direction="right" style="color: white; height: 100px;"
+            scrollamount="10">Regularly backup data
+
+        </marquee>
+        <button class="btn"><a href="Personal-Info.html">Get Started</a></button>
+        <a class="p-page" href="Personal-Info.html">Get Started</a>
+    </main>
+    <script>
+        const syncPointer = ({ x: pointerX, y: pointerY }) => {
+            const x = pointerX.toFixed(2);
+            const y = pointerY.toFixed(2);
+            const xp = (pointerX / window.innerWidth).toFixed(2);
+            const yp = (pointerY / window.innerHeight).toFixed(2);
+            document.documentElement.style.setProperty("--x", x);
+            document.documentElement.style.setProperty("--xp", xp);
+            document.documentElement.style.setProperty("--y", y);
+            document.documentElement.style.setProperty("--yp", yp);
+        };
+
+        document.body.addEventListener("pointermove", syncPointer);
+        
+
+    </script>
+</body>
+
+</html>
